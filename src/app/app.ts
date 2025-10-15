@@ -13,5 +13,5 @@ import { Separator } from './componentes/separator/separator';
   styleUrl: './app.css',
 })
 export class App {
-  readonly alfabeto: string = ' A B C D E F G H I J K L M N O P Q R S T U V W X Y Z';
+  readonly alfabeto: string[] = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 }
