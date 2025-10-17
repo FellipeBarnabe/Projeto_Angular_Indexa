@@ -1,0 +1,25 @@
+.linha {
+  list-style: none;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.linha .acoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.vector {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.vector img {
+  width: 16px;
+  height: 16px;
+}

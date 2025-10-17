@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './componentes/header/header';
 import { Separator } from './componentes/separator/separator';
+import { Contact } from './componentes/contact/contact';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, Container, Header, Separator],
+  imports: [CommonModule, RouterOutlet, Container, Header, Separator, Contact],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
