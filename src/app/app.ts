@@ -6,7 +6,7 @@ import { Header } from './componentes/header/header';
 import { Separator } from './componentes/separator/separator';
 import { Contact } from './componentes/contact/contact';
 
-interface Contato {
+interface contato {
   id: number;
   nome: string;
   telefone: string;
@@ -23,11 +23,11 @@ import agenda from './agenda.json';
 })
 export class App {
   readonly alfabeto: string[] = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-  contatos: Contato[] = agenda;
+  contatos: contato[] = agenda;
 
-  filtrarContratosPorLetraInicial(letra: string): Contato[] {
+  filtrarContatoPorLetraInicial(letra: string): contato[] {
     return this.contatos.filter((Contato) => {
-      return Contato.nome.toLowerCase().startsWith(letra);
+      return Contato.nome.toLowerCase().startsWith(letra.toLowerCase());
     });
   }
 }
