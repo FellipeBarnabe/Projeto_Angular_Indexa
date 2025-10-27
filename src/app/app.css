@@ -1,0 +1,9 @@
+.busca {
+  font-family: 'Montserrat';
+  padding-left: 15px;
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
