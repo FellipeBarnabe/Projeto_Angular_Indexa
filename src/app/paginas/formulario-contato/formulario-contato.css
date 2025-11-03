@@ -1,0 +1,185 @@
+header .cabecalho-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-icon__nome {
+  background: url('data:image/svg+xml;utf8,<svg fill="%23999" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M313.6 304h-16.7c-22.2 10.2-46.9 16-73 16s-50.8-5.8-73-16h-16.7C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128z"/></svg>')
+    no-repeat 10px center;
+  background-size: 18px;
+  padding-left: 35px; /* 👈 espaço pra não sobrepor o texto */
+  height: 40px;
+  font-size: 16px;
+}
+
+.input-icone__telefone {
+  background-image: url(/public/icon-wrapperTelefone.png);
+  background-size: 18px;
+  padding-left: 35px;
+  height: 40px;
+  font-size: 16px;
+}
+
+header .cabecalho-link img {
+  align-self: center;
+  margin-bottom: 56px;
+}
+
+header .cabecalho-link div {
+  display: flex;
+  align-self: flex-start;
+}
+
+header .cabecalho-link img.seta {
+  margin: 0 8px;
+}
+
+header .cabecalho-link a {
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0px;
+  color: #0d6efd;
+}
+
+header .cabecalho-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+}
+
+h1 {
+  font-family: 'Montserrat';
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #0d6efd;
+  margin: 12px 0;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  width: 100%;
+  margin: 8px 0 12px 0;
+  padding: 6px 12px;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+input#redes {
+  border-radius: 0 4px 4px 0;
+  padding: 0 12px;
+}
+
+input#aniversario {
+  width: 224px;
+  display: block;
+}
+
+label[for='redes'] {
+  display: block;
+}
+
+textarea {
+  height: 84px;
+}
+
+label {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+input:focus {
+  outline: none;
+}
+
+.span-http {
+  width: 72px;
+  height: 37px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ced4da;
+  background-color: #e9ecef;
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  margin: 8px 0 12px;
+  line-height: 37px;
+  padding: 0 12px;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botao-cancelar,
+.botao-salvar,
+.botao-desabilitado {
+  width: 196px;
+  height: 41px;
+  padding: 6px, 12px;
+  border-radius: 4px;
+  border: 1px;
+  gap: 8px;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.botao-cancelar {
+  color: #0d6efd;
+  background-color: #ffffff;
+  border: 1px solid #0d6efd;
+  cursor: pointer;
+}
+
+.botao-salvar {
+  color: #ffffff;
+  background-color: #0d6efd;
+  cursor: pointer;
+}
+
+.botao-desabilitado {
+  background-color: #adb5bd;
+  cursor: not-allowed;
+}
+
+.mensagem-erro {
+  font-size: 16px;
+  color: red;
+  margin-bottom: 12px;
+}
